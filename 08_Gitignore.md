@@ -3,7 +3,6 @@
 ## Introduction
 
 Certains fichiers ou répertoire doivent être ignorés, donc qui ne devraient pas être commités.
-
 Quelques exemples non exhautifs :
 1. des fichiers de configuration contenant des mots de passe
 2. les répertoires de compilation (en c# : \bin , \out)
