@@ -49,14 +49,14 @@ Si vous souhaitez cloner seulement une branche spécifique du dépôt, vous pouv
 git clone -b nom_de_branche https://github.com/utilisateur/nom_du_depot.git
 ```
 
-Cloner un dépôt vide (sans historique) :
+# Le clonage superficiel (shallow)
+
 Si vous voulez uniquement les fichiers actuels sans historique, utilisez l'option --depth pour spécifier la profondeur du clonage :
 
 ```bash
 git clone --depth 1 https://github.com/utilisateur/nom_du_depot.git
 ```
 
-# Le clonage superficiel (shallow)
 La commande git clone --depth est utilisée dans Git pour créer une copie superficielle (ou "shallow") d'un dépôt avec un historique limité. L'option --depth spécifie quelle partie de l'historique du dépôt récupérer lors du processus de clonage.
 
 Lorsque vous clonez un dépôt Git sans spécifier --depth, Git récupère l'intégralité de l'historique du dépôt, y compris toutes les branches et tous les commits. Cet historique complet vous permet d'avoir accès à l'évolution complète du projet, y compris tous les commits, branches et tags.
@@ -69,7 +69,7 @@ Ce clonage superficiel peut être avantageux dans certains scénarios :
 
 2. Clonage plus rapide : Récupérer un clonage superficiel est généralement plus rapide car il télécharge moins de commits et de fichiers. Cela peut être utile lorsque vous souhaitez rapidement mettre en place une copie locale à des fins de test.
 
-**Cependant, notez les limitations des clonages superficiels :**
+**Cependant, les limitations des clonages superficiels sont :**
 
 **Historique limité** : Étant donné que vous ne récupérez qu'un nombre limité de commits, vous n'aurez pas accès à l'intégralité de l'historique du dépôt. Les opérations qui dépendent des informations historiques, telles que git log ou la vérification des anciens commits, peuvent être restreintes ou pourraient ne pas fonctionner comme prévu.
 
