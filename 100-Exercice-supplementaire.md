@@ -4,7 +4,7 @@
 1. J'ai des sources sur mon pc
 2. J'ai développé ces sources sans utiliser GitHub.
 
-# Etapes
+# Étapes
 1. Créer un repository sur GitHub en respectant les consignes suivantes :
 * **ne pas cocher : Ajouter un readme.md**
 * **ne pas sélectionner de licence**
