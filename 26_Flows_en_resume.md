@@ -45,5 +45,8 @@ Cette pratique permet d’éviter d’avoir des conflits de **merge** et de perm
 
 ![trunk-flow](./images/github/trunk_flow.png)
 
+## Le workflow Sifa
+cette partie reste à écrire (au sens propre). Seule l'experience vous permettra de choisir le meilleur workflow pour Sifa Logistics.
+
 # Conclusion 
 **Ne vous lancez pas avec un flow sur un projet réel. Testez d'abord et choisissez le flow qui correspond à votre façon de travailler.**
