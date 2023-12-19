@@ -1,27 +1,19 @@
-# GitHub Projects
+# Les projets GitHub
+GitHub Projects sont des fonctionnalités intégrées de GitHub qui permettent aux équipes de gérer, organiser et suivre leur travail de manière plus structurée. Ils offrent un moyen de visualiser et de gérer les tâches, les problèmes, les fonctionnalités ou tout autre élément du projet, en les regroupant dans des tableaux kanban ou des listes.
 
-## C'est quoi un project ?
-Un projet est une liste de bugs, de fonctionnalités, de tâches et une feuille de route, qui intègrent vos problèmes et demandes de "pull request" sur GitHub pour vous aider à planifier et à suivre efficacement votre travail. 
-Vous pouvez créer et personnaliser plusieurs vues en filtrant, en triant, en regroupant vos problèmes et demandes de tirage, visualiser le travail avec des graphiques configurables, et ajouter des champs personnalisés pour suivre les métadonnées spécifiques à votre équipe. 
-Au lieu d’appliquer une méthodologie spécifique, un projet fournit des fonctionnalités flexibles que vous pouvez personnaliser en fonction des besoins et des processus de votre équipe.
+1. **Gestion des tâches et des projets** : Les GitHub Projects permettent de créer des tableaux kanban avec des colonnes personnalisables (par exemple, "À faire", "En cours", "Terminé") pour suivre l'avancement des tâches et des problèmes.
+1. **Organisation du travail collaboratif** : Les équipes peuvent facilement collaborer en attribuant des tâches, en commentant et en ajoutant des étiquettes pour organiser les problèmes ou les tâches.
+1. **Visualisation de l'avancement** : Les tableaux kanban offrent une vue d'ensemble visuelle de l'état actuel du projet, montrant où se situent les différentes tâches ou fonctionnalités.
+1. **Intégration avec d'autres fonctionnalités GitHub** : Les projets GitHub peuvent être liés à des référentiels (repositories), des problèmes, des pull requests, etc., ce qui facilite la navigation entre ces différentes parties du développement.
+1. **Personnalisation et flexibilité** : Les utilisateurs peuvent créer des modèles de projets adaptés à leurs besoins spécifiques, avec des colonnes, des étiquettes et des filtres personnalisables.
+1. **Suivi des progrès** : Les statistiques et les métriques intégrées permettent de suivre les performances individuelles, de l'équipe ou du projet dans son ensemble.
 
 
-## Création d'un projet (organisation ou personnel)
+## Vue "Board"
+![projects_board](./images/github/projects_vue_board.png)
 
-Les projets d’utilisateur peuvent suivre les problèmes et les demandes de "pull request" des dépôts appartenant à votre compte personnel.
+## Vue "Table"
+![projects_table](./images/github/projects_vue_table.png)
 
-1. Dans l’angle supérieur droit de GitHub.com, cliquez sur votre photo de profil, puis sur "**Votre profil**"
-![project_01](./images/github/project_01.png)
-
-2. Dans le menu à gauche, cliquez sur "**Projects**"
-![project_02](./images/github/project_02.png)
-
-3. Cliquez sur "**Nouveau projet**"
-![project_03](./images/github/project_03.png)
-
-4. Sélectionnez un type de projet
-5. Donnez un nom à votre projet, puis cliquez "**Create project**"
-
-Votre projet est maintenant prêt.
-![project_05](./images/github/project_05.png)
-
+## Vue "Roadmap"
+![projects_roadmap](./images/github/projects_vue_roadmap.png)
