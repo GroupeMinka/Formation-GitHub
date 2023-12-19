@@ -32,13 +32,13 @@ Cela affichera les différents stashes avec des identifiants uniques (stash@{n})
 Si vous souhaitez appliquer les modifications d'un stash spécifique, utilisez la commande git stash apply suivi de l'identifiant du stash (par exemple, stash@{1}) :
 
 ```bash
-git stash apply stash@{1}
+git stash apply "stash@{1}"
 ```
 ### Étape 5 : Supprimer un stash
 Après avoir appliqué les modifications et les avoir réintégrées dans votre travail, vous pouvez supprimer le stash avec la commande :
 
 ```bash
-git stash drop stash@{1}
+git stash drop "stash@{1}"
 ```
 Cela supprimera le stash spécifique.
 
@@ -47,8 +47,8 @@ La principale différence réside dans le fait que le « git stash pop » appliq
 
 ### voir le contenu d'un cache
 ```bash
-git stash show stash@{1}
-git stash show -p stash@{1}
+git stash show "stash@{1}"
+git stash show -p "stash@{1}"
 ```
 
 ## Exercice :
