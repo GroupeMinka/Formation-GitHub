@@ -28,6 +28,8 @@ L'extension "GitHub Pull Requests and Issues" :
 ![extension github](./images/github/extension_github.png)
 
 ## git rebase
+**Tant que vous rebasez vos branches en local, tout va bien. Mais attention, si vous rebasez une branche qui se trouve déjà sur le serveur, c'est la catastrophe.**
+
 Votre historique git est un peu comme un arbre, avec son tronc (la branche main), ses branches et ses sous-branches.
 La commande **git rebase** permet de couper une branche pour la regreffer à un autre endroit sur l'arbre.
 
