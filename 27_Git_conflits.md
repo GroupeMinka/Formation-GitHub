@@ -23,3 +23,70 @@ Git marquera le fichier comme étant en conflit et arrêtera le processus de mer
 3. **Ne pas occulter un conflit** : le report à plus tard peut être plus gênant qu'autre chose.
 4. **Commiter fréquemment** : moins de code modifié = moins de conflits possibles
 
+## Pour vous aider :
+L'extension "GitHub Pull Requests and Issues" :
+![extension github](./images/github/extension_github.png)
+
+## git rebase
+Votre historique git est un peu comme un arbre, avec son tronc (la branche main), ses branches et ses sous-branches.
+La commande **git rebase** permet de couper une branche pour la regreffer à un autre endroit sur l'arbre.
+
+```
+Main    A---B---C---D---E
+            \
+Fea141      F---G---H            
+```
+
+Quand on fait un **git merge** on obtient :
+```
+Main    A---B---C---D---E---I
+            \               /
+Fea141      F---G---H------            
+```
+
+En utilisant un rebase avant chaque fusion, on obtient l'historique suivant :
+```
+Main    A---B---C---D---E---F---G---H
+       
+```
+
+Pour obtenir cet historique, les commandes git sont les suivantes :
+```
+1. git checkout Fea141
+2. git rebase main Fea141
+3. git checkout main
+4. git merge Fea141
+5. git branch -d Fea141
+```
+
+## Réparer un création de branche hasardeuse...
+Pour corriger un bug en urgence, j'ai créé une branche Fix323 , mais au lieu de la créer depuis la branche main, (et oui, l'urgence engendre des problèmes) je l'ai créé depuis ma branche Fea141...
+```
+Main    A---B---C---D---E
+            \
+Fea141      F---G---H   
+                 \                
+Fix323              I---J
+```
+Je vais donc rebaser la branche Fix323 sur la branche main
+
+```
+git rebase Fea141 Fix323 --onto main
+git checkout main
+git merge Fix323
+```
+
+Et j'obtiens
+
+```
+Main    A---B---C---D---E---I---J
+            \
+Fea141      F---G---H   
+```
+
+La commande **git rebase Fea141 Fix323 --onto main** signifie :
+1. Extrait la branche de Fea141 jusqu'à Fix323
+1. "Colle" la sur main
+
+
+**Tant que vous rebasez vos petites branches en local, tout va bien. Mais attention, si vous rebasez une branche qui se trouve déjà sur le serveur, c'est la catastrophe.**
